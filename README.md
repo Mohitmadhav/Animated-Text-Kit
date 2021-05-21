@@ -84,7 +84,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  animated_text_kit: ^4.2.0
+  animated_text_kit: ^4.2.1
 ```
 
 ### 2. Install it
@@ -150,6 +150,8 @@ There are also custom callbacks:
 - `onNext(int index, bool isLast)` – This is called before the next text animation, after the previous one's pause
 - `onNextBeforePause(int index, bool isLast)` – This is called before the next text animation, before the previous one's pause
 - `onFinished` - This is called at the end, when the parameter `isRepeatingAnimation` is set to `false`
+
+**Note:** You might come up with an issue that the `text` does not get updated with `setState` as shown [here](https://github.com/aagarwal1012/Animated-Text-Kit/issues/27). The solution to this, is a key that changes based on the text. For reference, watch [this](https://www.youtube.com/watch?v=kn0EOS-ZiIc) video.
 
 ## New with Version 3
 
@@ -524,6 +526,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Koniiro"><img src="https://avatars.githubusercontent.com/u/81352867?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Koniiro</b></sub></a><br /><a href="https://github.com/aagarwal1012/Animated-Text-Kit/commits?author=Koniiro" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/CoderInTheWoods"><img src="https://avatars.githubusercontent.com/u/25412142?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kalgi Sheth</b></sub></a><br /><a href="https://github.com/aagarwal1012/Animated-Text-Kit/commits?author=CoderInTheWoods" title="Code">💻</a> <a href="#example-CoderInTheWoods" title="Examples">💡</a> <a href="https://github.com/aagarwal1012/Animated-Text-Kit/commits?author=CoderInTheWoods" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Mohitmadhav"><img src="https://avatars.githubusercontent.com/u/59333817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mohit_007</b></sub></a><br /><a href="https://github.com/aagarwal1012/Animated-Text-Kit/commits?author=Mohitmadhav" title="Documentation">📖</a></td>
   </tr>
 </table>
 
